@@ -1,5 +1,5 @@
 $(updateView)
 
 function updateView() {
-    alert("Zagster Data Ahead")
+    alert("Continue at Your Own Risk")
 }
