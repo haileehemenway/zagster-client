@@ -1,5 +1,14 @@
+
+
+const BASE_URL = "https://zagster-service.herokuapp.com"
+
 $(updateView)
 
 function updateView() {
-    alert("Continue at Your Own Risk")
+    $.getJSON(BASE_URL + "/rides/count", updateRideCount)
+}
+
+function updateRideCount(data){
+    numberOfRides = data.count
+    $("h2#rideCount").html(numberOfRides)
 }
